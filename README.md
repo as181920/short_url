@@ -1,24 +1,13 @@
 # ShortUrl
-Short description and motivation.
+短域名Engine
 
 ## Usage
-How to use my plugin.
 
 ## Installation
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'short_url'
-```
-
-And then execute:
-```bash
-$ bundle
-```
-
-Or install it yourself as:
-```bash
-$ gem install short_url
+gem 'short_url', git: "git@github.com:as181920/short_url.git"
 ```
 
 ## Contributing
