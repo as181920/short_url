@@ -1,5 +1,3 @@
-require_dependency "short_url/application_controller"
-
 module ShortUrl
   class LinksController < ApplicationController
     before_action :authenticate_remote_ip_in_whitelist, only: [:create]
