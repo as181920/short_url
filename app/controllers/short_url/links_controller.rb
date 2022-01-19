@@ -9,7 +9,7 @@ module ShortUrl
     def show
       @original_url = ShortenerService.fetch(params[:short_id])
       if @original_url.present?
-        redirect_to url_with_additional_params(@original_url, request.query_parameters), status: :moved_permanently
+        redirect_to url_with_additional_params(@original_url, request.query_parameters), allow_other_host: true, status: :moved_permanently
       else
         render plain: "Short url not found", status: :not_found
       end
