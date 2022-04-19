@@ -1,3 +1,5 @@
+require "addressable/uri"
+
 module ShortUrl
   class Engine < ::Rails::Engine
     isolate_namespace ShortUrl
