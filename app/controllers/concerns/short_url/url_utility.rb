@@ -3,8 +3,7 @@ module ShortUrl
     extend ActiveSupport::Concern
 
     included do
-      helper_method :url_with_additional_params
-      helper_method :url_by_shorten
+      helper_method :url_with_additional_params, :url_with_stripped_params, :url_by_shorten
     end
 
     private
