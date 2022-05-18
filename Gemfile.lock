@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     short_url (0.1.1)
+      addressable
       rails (>= 6.1)
 
 GEM
@@ -72,6 +73,8 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     builder (3.2.4)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
@@ -90,7 +93,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.7.1)
+    mini_portile2 (2.8.0)
     minitest (5.15.0)
     net-imap (0.2.3)
       digest
@@ -108,9 +111,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.1)
-      mini_portile2 (~> 2.7.0)
+    nokogiri (1.13.6)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
+    public_suffix (4.0.7)
     racc (1.6.0)
     rack (2.2.3)
     rack-test (1.1.0)
