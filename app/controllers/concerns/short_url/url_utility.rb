@@ -9,7 +9,7 @@ module ShortUrl
     private
 
       def url_with_additional_params(url, params = {})
-        Addressable::URI.parse(url).tap { |uri| uri.query = Rack::Utils.parse_nested_query(uri.query).deep_merge(params).to_query.presence }.to_s
+        Addressable::URI.parse(url).tap { |uri| uri.query = Rack::Utils.parse_nested_query(uri.query).deep_merge(params.deep_stringify_keys).to_query.presence }.to_s
       end
 
       def url_with_stripped_params(url, keys = [])
